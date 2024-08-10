@@ -32,7 +32,7 @@ arguments ONLY this order !!! (depends of chosen $mode)
 $rec $mode ...
 
 IMPORTANT:
-if $mode doesnt fitts to some function -> $mode is processing as id "candidate" to open the path (it can be incorrect)
+if $mode doesnt fitts to some command function -> $mode is processing as path id "candidate" to open the corresponding path (it can be incorrect)
 so $mode is used like: $rec desktop -> then opens your path with key "desktop"
 
 arguments with [] are optional
@@ -62,10 +62,10 @@ SAVE NEW PATH
 $rec -n [$new_path] [$id :n] [$new_key]
 IF:
 $new_path doesnt exists -> possible arguments are: $id $new_key, default path is setting
-$id not maches (or incorrect) -> is it setting as new_key
+$id not maches (or incorrect) -> it is setting as new_key
 $id is not specified (or incorrect) -> defult key it setting as new_key
 $id is defult -> path is appending to file at the first line "TOP"
-$id is "n" -> path is appending to file at the end "BOTTOM"
+$id is "n" -> path is appending to file at the end line "BOTTOM"
 
 DISPLAY PATHS
 $rec -i [$file]
@@ -76,9 +76,8 @@ $ls_mode spacifies ls command flag, like ls -t
 
 OPEN PATH
 $rec [$id :n] [$open_mode]
-defult &open_mode is "not w"
 IF:
-$open_mode is NOT "w" cd to chosen path is open in current window
+$open_mode is NOT "w" chosen path is open in current window $cd
 $open_mode is "w" chosen path is open in new window
 
 DELETE PATH
