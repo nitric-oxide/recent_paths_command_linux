@@ -10,7 +10,7 @@ TO START USING:
 
 COMMAND DESCRIPTION:
 rec
-(recent paths menager)
+(recent paths manager)
 You can basickly: save path, open, edit, organize list, sort, copy entire list of paths.
 Of course list of paths is stored in recent_info.txt, it contatins:
 -path
@@ -87,17 +87,19 @@ $rec -d [$id :n]
 CLEAR ALL PATHS
 $rec -cl
 
+COMMANDS TO MANAGE PATHS FILES FOLDER:
+
 COPY INFO FILE
 $rec -c $new_file_name
-coppies recent_info.txt in folder recent_info.txt is stored
+copies recent_info.txt in folder, where recent_info.txt is stored
 
 SETS COPY OF INFO FILE
 $rec -cs $file_name
-sets coppy of recent_info.txt to new recent_info.txt, in folder recent_info.txt is stored
+sets coppy of recent_info.txt to new recent_info.txt in folder, where recent_info.txt is stored
 
 DELTE COPY OF INFO FILE
 $rec -df $file_name
-coppies recent_info.txt in folder recent_info.txt is stored
+copies recent_info.txt in folder, where recent_info.txt is stored
 
 UPDATE PATH OR DATE
 $rec -u $id [$update_mode]
@@ -117,7 +119,7 @@ FIND TEXT
 $rec -ft $text [$file]
 search some text in recent_info.txt file
 
-SORTING:
+PATHS SORTING:
 
 sort is applied to file -> causes modification !
 
