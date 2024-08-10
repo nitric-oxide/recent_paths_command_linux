@@ -28,7 +28,7 @@ key or index is called "id"
 ###################################################################################################### USAGE:
 
 arguments ONLY this order !!! (depends of chosen $mode)
-"$mode" First argument determinants command function, rest arguments specify function
+"$mode" First argument determinants command function, rest arguments specify function operation
 $rec $mode ...
 
 IMPORTANT:
